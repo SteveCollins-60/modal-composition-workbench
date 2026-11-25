@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modal Composition Workbench</title>
+
+</head>
+<body>
+<h1>Modal Composition Workbench</h1>
+<p>Please select a mode and a gesture type to view matching patterns.</p>
+<label>Mode:</label>
+<select id="modeSelect">
+    <option>Dorian</option>
+    <option>Hypodorian</option>
+    <option>Phrygian</option>
+    <option>Hypophrygian</option>
+    <option>Lydian</option>
+    <option>Hypolydian</option>
+    <option>Mixolydian</option>
+    <option>Hypomixolydian</option>
+    <option>Aeolian</option>
+    <option>Hypoaeolian</option>
+    <option>Ionian</option>
+    <option>Hypoionian</option>
+</select>
+
+
+
+<br><br>
+
+<label>Gesture Type:</label>
+<select id="gestureSelect">
+    <option>Opening</option>
+    <option>Ascending</option>
+    <option>Descending</option>
+    <option>Circling</option>
+    <option>Hovering</option>
+    <option>Pre-Cadential</option>
+    <option>Cadential</option>
+</select>
+
+<br><br>
+
+<button id="findButton">Find Patterns</button>
+
+<div style="display:flex; gap:20px; align-items:flex-start;">
+
+    <div style="width:33%;">
+        <h2>Results</h2>
+
+        <div id="results">
+            No patterns found.
+        </div>
+    </div>
+
+   <div style="width:33%;">
+ <h2>Composition Guide</h2>
+
+ <iframe
+     src="Composition Guide.pdf"
+     width="100%"
+     height="800">
+ </iframe>
+
+</div>
+
+   <div style="width:33%;">
+ <h2>Quick Reference</h2>
+
+ <iframe
+     src="Modal Music Quick Reference.pdf"
+     width="100%"
+     height="800">
+ </iframe>
+
+</div>
+</div>
+
+<script src="patterns.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
